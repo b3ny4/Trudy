@@ -1,13 +1,17 @@
 # Trudy
 Trudy is a Network Intrusion Library.
 
+### Tested on
+ - Ubuntu 20.04 (Focal Fossa)
+ - Ubuntu 22.04 (Jammy Jellyfish)
+
 ## DEPENDENCIES
 This library relies on the pip modules in requirements.txt.
 
 Some libraries get built by pip and require the following debain/ubuntu packets (tested on Ubuntu 22.04)
 
 ```
-build-essential python-dev libnetfilter-queue-dev
+build-essential python-dev python3-dev libnetfilter-queue-dev
 ```
 
 ## Trudy

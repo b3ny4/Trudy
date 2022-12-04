@@ -29,7 +29,9 @@ class Trudy():
     
     def enable_netfilter_queue(self, callback):
         # TODO: use nftables
-        ret = subprocess.check_call(f"iptables -I FORWARD -j NFQUEUE --queue-num 0", shell=True)
+        ret = subprocess.check_call("iptables -I FORWARD -j NFQUEUE --queue-num 0", shell=True)
+        ret += subprocess.check_call("iptables -I INPUT -j NFQUEUE --queue-num 0", shell=True)
+        ret += subprocess.check_call("iptables -I OUTPUT -j NFQUEUE --queue-num 0", shell=True)
         if ret != 0:
             self.__logger.log("Unable to enable netfilter queue", self.__logger.Level.FAIL)
             return
