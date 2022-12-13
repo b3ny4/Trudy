@@ -1,9 +1,9 @@
 # Trudy
-Trudy is a Network Intrusion Library.
+Trudy is a Python based Network Intrusion Library with minimal dependencies.
 
 ### Tested on
- - Ubuntu 20.04 (Focal Fossa)
  - Ubuntu 22.04 (Jammy Jellyfish)
+ - Ubuntu 20.04 (Focal Fossa)
 
 ## DEPENDENCIES
 This library relies on the pip modules in requirements.txt.
